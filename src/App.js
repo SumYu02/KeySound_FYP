@@ -10,6 +10,8 @@ import Footer from './Components/Footer/Footer';
 import keyboard_banner from './Components/Assets/Frontend_Assets/keyboardBanner.png'
 import earphone_banner from './Components/Assets/Frontend_Assets/earphoneBanner.png'
 import mouse_banner from './Components/Assets/Frontend_Assets/mouseBanner.png'
+import Chatbot from './Components/ChatBot/ChatBot';
+import Search from './Pages/Search';
 
 function App() {
   return (
@@ -26,7 +28,9 @@ function App() {
           </Route>
           <Route path='/cart' element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
+          <Route path="/search" element={<Search />} />
         </Routes>
+        <Chatbot/>
         <Footer/>
       </BrowserRouter>
 

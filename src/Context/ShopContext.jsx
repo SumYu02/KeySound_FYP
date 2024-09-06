@@ -44,12 +44,19 @@ const ShopContextProvider = (props) => {
     return totalItem;
   }
 
-
   useEffect(() => {
     console.log("Cart items updated:", cartItems);
   }, [cartItems]);
 
-  const contextValue = {getTotalCartItems, getTotalCartAmount,all_product, cartItems, addToCart, removeFromCart };
+  const contextValue = {
+    getTotalCartItems,
+    getTotalCartAmount,
+    all_product,
+    cartItems,
+    addToCart,
+    removeFromCart,
+  
+  };
 
   return (
     <ShopContext.Provider value={contextValue}>
